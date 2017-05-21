@@ -31,7 +31,7 @@ public class ArrayListInJava3 {
 		//System.out.println(arrayList.contains(400));
 		
 		System.out.println(arrayList.containsAll(arrayList1));
-		
+
 		//System.out.println(arrayList);
 		
 	}
