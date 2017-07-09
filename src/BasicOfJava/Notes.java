@@ -47,12 +47,12 @@ Point to remember
 First Line of class is always package Name
 Public is access of Class
 int i, int j is class variables
-
+---------------------------------
 public void test(int k)
 Method first String "Public" is access to method
 "int k" is local variable to method
 void is return type of method
-
+---------------------------------
 public static void main(String[] args)
 Main method is always static method
 Return type of main method is always void
