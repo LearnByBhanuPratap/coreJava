@@ -1,66 +1,57 @@
-package ReturnTypeInJava;
+package returnTypeInJava;
 
 public class Example1 {
-
-	private double d = 90.980;
-	private String s1 = "Test";
-	private int i = 90;
-	private float f = 2.80f;
-	private long l = 2l;
-	private char c = 'a';
-	private boolean b = true;
 	
-	private int[] array = {20,30,40};
-
-	private Example1 example1;
-
-	public double getD() {
-		return d;
+	public void test1(){
+		System.out.println("void test1()");
 	}
 	
-	public void getD1() {
-		//return d;
-	}
-
-	public String getS1() {
-		return s1;
-	}
-
-	public int getI() {
-		return i;
-	}
-
-	public float getF() {
-		return f;
-	}
-
-	public long getL() {
-		return l;
-	}
-
-	public char getC() {
-		return c;
-	}
-
-	public boolean isB() {
-		return false;
-	}
-
-	public Example1 getExample1() {
-		return example1;
+	public int test2(){
+		System.out.println("int test2()");
+		return 2;
 	}
 	
-
-	public int[] getArray() {
-		int[] a = {20,30,40};
-		int[] b = new int[6];
-		b[0] = 90;
-		return b;
+	public double test3(){
+		System.out.println("int test2()");
+		return 9.899;
 	}
-
+	
+	public boolean test4(){
+		System.out.println("int test2()");
+		return true;
+	}
+	
+	public char test5(){
+		System.out.println("int test2()");
+		return 'c';
+	}
+	
+	public String test6(){
+		System.out.println("int test2()");
+		return "c";
+	}
+	
+	public int[] test7(){
+		System.out.println("int test2()");
+		return new int[3];
+	}
+	
+	public int[][] test8(){
+		System.out.println("int test2()");
+		return new int[3][6];
+	}
+	
+	public Example1 test9(){
+		System.out.println("int test2()");
+		return new Example1();
+	}
+	
 	public static void main(String[] args) {
+		int[] a = new int[3];
+		int[][] b = new int[3][6];
+		
 		Example1 obj = new Example1();
-		System.out.println(obj.getD());
 	}
+
 
 }
