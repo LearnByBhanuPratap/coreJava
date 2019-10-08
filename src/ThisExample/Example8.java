@@ -1,4 +1,5 @@
 package ThisExample;
+
 public class Example8 {
 	int a;
 	int b;
@@ -18,6 +19,9 @@ public class Example8 {
 
 	public static void main(String[] args) {
 		Example8 object = new Example8();
-		object.get().display();
+		
+		Example8 data = object.get();
+		
+		data.display();
 	}
 }

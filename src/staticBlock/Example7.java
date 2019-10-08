@@ -15,6 +15,7 @@ public class Example7 {
 	void test2() {
 		i = 20;
 		b = 10;
+		test1();
 		System.out.println("from m2");
 	}
 

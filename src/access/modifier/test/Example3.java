@@ -10,6 +10,7 @@ public class Example3 {
 		
 		example1.name2();
 		
+		
 		System.out.println(example1.s1);
 	}
 

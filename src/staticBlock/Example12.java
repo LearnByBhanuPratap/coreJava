@@ -1,6 +1,7 @@
 package staticBlock;
 
 public class Example12 {
+	
 	private static String str = "test";
 
 	class MyNestedClass {

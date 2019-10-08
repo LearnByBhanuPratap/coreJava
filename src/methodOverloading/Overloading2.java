@@ -2,11 +2,11 @@ package methodOverloading;
 
 public class Overloading2 {
 
-	private static void display(int a) {
+	public static void display(int a) {
 		System.out.println("Got Integer data.");
 	}
 
-	private static void display(String a) {
+	public static void display(String a) {
 		System.out.println("Got String object.");
 	}
 

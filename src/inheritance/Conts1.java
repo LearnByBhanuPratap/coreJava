@@ -7,8 +7,4 @@ public class Conts1 {
 	public Conts1(int a) {
 		this.a = a;
 	}
-
-	Conts1() {
-
-	}
 }

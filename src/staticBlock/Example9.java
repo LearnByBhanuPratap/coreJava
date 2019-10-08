@@ -11,7 +11,7 @@ public class Example9 {
 	}
 	
 	public static void main(String[] args) {
-		test1();
+		Example9.test1();
 		//test2();
 	}
 }

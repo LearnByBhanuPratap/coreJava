@@ -14,7 +14,7 @@ public abstract class Person {
 
 	@Override
 	public String toString() {
-		return "Name=" + this.name + "::Gender=" + this.gender;
+		return "Person [name=" + name + ", gender=" + gender + "]";
 	}
 
 	public void changeName(String newName) {

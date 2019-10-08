@@ -16,6 +16,9 @@ public class Example4 {
 		System.out.println("value of i=" + i);
 	}
 
+	Example4(){
+		System.out.println("----");
+	}
 	public static void main(String[] args) {
 
 	}

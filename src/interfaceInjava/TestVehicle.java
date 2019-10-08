@@ -9,7 +9,7 @@ public class TestVehicle {
 		car.speedUp(4);
 		car.applyBrakes(1);
 
-		System.out.println("Bicycle present state :");
+		System.out.println("Car present state :");
 		car.display();
 
 		Bike bike = new Bike();

@@ -2,7 +2,7 @@ package inheritance;
 
 public class Student {
 	
-	private String Schooladdress;
+	public String Schooladdress;
 
 	private String SchoolName;
 	

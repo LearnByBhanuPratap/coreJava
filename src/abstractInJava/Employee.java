@@ -23,6 +23,7 @@ public class Employee extends Person {
 		Person employee = new Employee("Test2", "Male", 12);
 		student.work();
 		employee.work();
+		System.out.println(employee.toString());
 		employee.changeName("Test3");
 		System.out.println(employee.toString());
 	}
