@@ -1,6 +1,7 @@
 package enumjava;
 
 public enum Operation {
+	
 	PLUS, MINUS, TIMES, DIVIDE;
 
 	double calculate(double x, double y) {
