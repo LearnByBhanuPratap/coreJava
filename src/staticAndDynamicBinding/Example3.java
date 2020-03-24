@@ -1,6 +1,7 @@
 package staticAndDynamicBinding;
 
 public class Example3 extends Example2 {
+	
 	void eat() {
 		System.out.println("dog is eating...");
 	}
