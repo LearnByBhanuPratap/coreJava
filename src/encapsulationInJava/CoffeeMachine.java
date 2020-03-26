@@ -3,7 +3,7 @@ package encapsulationInJava;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CoffeeMachine {
+public class CoffeeMachine implements CoffeeMachineIf {
 
 	private Map<CoffeeSelection, Configuration> configMap;
 
@@ -17,12 +17,12 @@ public class CoffeeMachine {
 		this.beans = beans;
 		this.grinder = new Grinder();
 		this.brewingUnit = new BrewingUnit();
-
 		this.configMap = new HashMap<CoffeeSelection, Configuration>();
-		this.configMap.put(CoffeeSelection.ESPRESSO, new Configuration(8, 28));
-		this.configMap.put(CoffeeSelection.FILTER_COFFEE, new Configuration(30, 480));
+		this.configMap.put(CoffeeSelection.ESPRESSO, new Configuration(80, 2800));
+		this.configMap.put(CoffeeSelection.FILTER_COFFEE, new Configuration(300, 4800));
 	}
 
+	@Override
 	public Coffee brewCoffee(CoffeeSelection selection) throws Exception {
 		switch (selection) {
 		case FILTER_COFFEE:
@@ -40,7 +40,7 @@ public class CoffeeMachine {
 		Configuration config = configMap.get(CoffeeSelection.ESPRESSO);
 
 		GroundCoffee groundCoffee = this.grinder.grind(this.beans.get(CoffeeSelection.ESPRESSO),
-				config.getQuantityCoffee());
+				this.beans.get(CoffeeSelection.ESPRESSO).getQuantity());
 
 		// brew an espresso
 		return this.brewingUnit.brew(CoffeeSelection.ESPRESSO, groundCoffee, config.getQuantityWater());
@@ -51,9 +51,23 @@ public class CoffeeMachine {
 
 		// grind the coffee beans
 		GroundCoffee groundCoffee = this.grinder.grind(this.beans.get(CoffeeSelection.FILTER_COFFEE),
-				config.getQuantityCoffee());
+				this.beans.get(CoffeeSelection.FILTER_COFFEE).getQuantity());
 
 		// brew a filter coffee
 		return this.brewingUnit.brew(CoffeeSelection.FILTER_COFFEE, groundCoffee, config.getQuantityWater());
+	}
+
+	public void addBeans(CoffeeSelection sel, CoffeeBean newBeans) throws Exception {
+		CoffeeBean existingBeans = this.beans.get(sel);
+
+		if (existingBeans != null) {
+			if (existingBeans.getName().equals(newBeans.getName())) {
+				existingBeans.setQuantity(existingBeans.getQuantity() + newBeans.getQuantity());
+			} else {
+				throw new Exception("Only one kind of beans supported for each CoffeeSelection.");
+			}
+		} else {
+			this.beans.put(sel, newBeans);
+		}
 	}
 }

@@ -4,7 +4,6 @@ package encapsulationInJava;
 public class Coffee {
 
 	private CoffeeSelection selection;
-
 	private double quantity;
 
 	public Coffee(CoffeeSelection selection, double quantity) {
@@ -20,7 +19,11 @@ public class Coffee {
 		return quantity;
 	}
 
-	public void setQuantity(double quantity) {
-		this.quantity = quantity;
+	public void setQuantity(double quantity) throws Exception {
+		if (quantity >= 0.0) {
+			this.quantity = quantity;
+		} else {
+			throw new Exception("Quantity has to be >= 0.0.");
+		}
 	}
 }

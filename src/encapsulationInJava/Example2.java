@@ -7,6 +7,7 @@ public class Example2 {
 	private String age;
 
 	public String getName() {
+
 		return name;
 	}
 
@@ -21,5 +22,6 @@ public class Example2 {
 	public void setAge(String age) {
 		this.age = age;
 	}
+
 
 }

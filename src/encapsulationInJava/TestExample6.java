@@ -15,7 +15,8 @@ public class TestExample6 {
 	}
 
 	public List<String> getBooks() {
-		return books;
+		return new ArrayList<String>(books);
+		//return books;
 	}
 
 	public void setBooks(List<String> books) {
