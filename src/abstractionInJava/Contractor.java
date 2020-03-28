@@ -13,4 +13,5 @@ public class Contractor extends Employee {
 	public int calculateSalary() {
 		return getPaymentPerHour() * workingHours;
 	}
+
 }

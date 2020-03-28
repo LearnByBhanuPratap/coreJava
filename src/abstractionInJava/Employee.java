@@ -1,6 +1,7 @@
 package abstractionInJava;
 
 public abstract class Employee {
+	
 	private String name;
 	private int paymentPerHour;
 
