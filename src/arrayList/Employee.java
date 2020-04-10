@@ -1,6 +1,6 @@
 package arrayList;
 
-public class Employee implements Cloneable {
+public class Employee implements Cloneable{
 
 	private int empoyeeId;
 	private String employeeName;
@@ -14,10 +14,8 @@ public class Employee implements Cloneable {
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		
-		Employee obj = (Employee)super.clone();
-		obj.setDepartment(obj.getDepartment());
-		return obj;
+		Employee cloned = (Employee) super.clone();
+		return (Employee)super.clone();
 	}
 
 	public int getEmpoyeeId() {

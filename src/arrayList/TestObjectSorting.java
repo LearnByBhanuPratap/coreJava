@@ -13,6 +13,10 @@ public class TestObjectSorting {
 		list.add(new State(300, "BC", "AA"));
 		list.add(new State(800, "FC", "FF"));
 		list.add(new State(600, "ED", "EE"));
+		
+		System.out.println(list);
+		
+		System.out.println("----");
 
 		list.sort(new PopulationSorter());
 		System.out.println(list);
@@ -25,6 +29,7 @@ public class TestObjectSorting {
 		
 		Collections.sort(list,new DistrictSorter());
 		System.out.println(list);
+	
 
 	}
 
