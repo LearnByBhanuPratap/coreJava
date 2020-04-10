@@ -28,7 +28,7 @@ public class Department1 implements Cloneable {
 	
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-	    return super.clone();
+		return super.clone();
 	}
 
 }

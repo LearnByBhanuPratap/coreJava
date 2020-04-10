@@ -1,8 +1,6 @@
 package customException;
 
-import java.io.Serializable;
-
-public class DAOException extends Exception implements Serializable {
+public class DAOException extends Exception {
 	
 	private ErrorCode erroCode;
 

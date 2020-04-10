@@ -2,12 +2,8 @@ package customException;
 
 import java.io.Serializable;
 
-public class DataException extends Exception implements Serializable {
+public class DataException extends Exception {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	DataException(String msg, Throwable t) {
 		super(msg, t);

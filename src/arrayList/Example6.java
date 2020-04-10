@@ -1,6 +1,7 @@
 package arrayList;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Example6 {
 
@@ -25,5 +26,12 @@ public class Example6 {
 
 	public static void main(String[] args) {
 		Example6.cloneData();
+		
+		ArrayList<Integer> li = new ArrayList<Integer>();
+		li.ensureCapacity(2000);
+		li.add(10);
+		li.add(10);
+		li.add(10);
+		
 	}
 }

@@ -24,8 +24,21 @@ public class TestException {
 		}
 	}
 	
-	public static void main(String[] args) throws DAOException{
-		TestException.test2();
-		TestException.test3();
+	public static void main(String[] args) {
+		try {
+			TestException.test2();
+		} catch (DAOException e) {
+			//e.printStackTrace();
+		}
+		try {
+			TestException.test3();
+		} catch (DAOException e) {
+			System.out.println(e.getErroCode());
+			System.out.println(e.getMessage());
+			System.out.println(e.getCause());
+			if(e.getErroCode().name().equalsIgnoreCase("INVALID_DATA")) {
+				System.out.println("------");
+			}
+		}
 	}
 }

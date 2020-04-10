@@ -6,7 +6,7 @@ public class Example22 {
 		throw new ArithmeticException("Calculation error");
 	}
 
-	void test2() throws ArithmeticException {
+	void test2() {
 		test1();
 	}
 

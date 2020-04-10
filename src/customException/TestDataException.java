@@ -16,8 +16,13 @@ public class TestDataException {
 		}
 	}
 
-	public static void main(String[] args) throws DataException {
-		TestDataException.test2();
+	public static void main(String[] args) {
+		try {
+			TestDataException.test2();
+		} catch (DataException e) {
+			System.out.println(e.getCause());
+			System.out.println(e.getMessage());
+		}
 	}
 
 }

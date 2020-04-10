@@ -12,7 +12,7 @@ public class Example12 {
 					System.out.print("Arithmetic Exception");
 					System.out.println(" handled in Third try-block");
 				}
-			} catch (ArithmeticException e) {
+			} catch (ArrayIndexOutOfBoundsException e) {
 				System.out.print("Arithmetic Exception");
 				System.out.println(" handled in Second try-block");
 			}

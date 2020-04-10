@@ -7,10 +7,18 @@ public class Example9 {
 			int i = 90 / 1;
 			int a[] = { 20 };
 			int k = a[2];
-		} catch (ArithmeticException e) {
+		} 
+		
+		catch (ArithmeticException e) {
 			System.out.println("ArithmeticException handeled");
-		} catch (ArrayIndexOutOfBoundsException e) {
+		} 
+		
+		catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("ArrayIndexOutOfBoundsException handeled");
+		}
+		
+		finally {
+			
 		}
 		System.out.println("code execution completed");
 	}

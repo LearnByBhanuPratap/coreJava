@@ -4,11 +4,11 @@ import java.io.IOException;
 
 public class Example21 {
 
-	void test() throws IOException {
+	void test() throws Exception {
 		throw new IOException("device error");// checked exception
 	}
 
-	void tset2() throws IOException {
+	void tset2() throws Exception {
 		test();
 	}
 

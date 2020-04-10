@@ -21,7 +21,7 @@ public class Example11 {
 			} catch (ArrayIndexOutOfBoundsException e) {
 				System.out.println("ArrayIndexOutOfBoundsException handeled");
 			}
-		} catch (ArithmeticException e) {
+		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("ArithmeticException handeled");
 		}
 	}

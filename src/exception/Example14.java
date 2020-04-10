@@ -6,7 +6,7 @@ public class Example14 {
 		try {
 			int num = 9 / 0;
 			System.out.println(num);
-		} catch (ArithmeticException e) {
+		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Number should not be divided by zero");
 		}
 		/*

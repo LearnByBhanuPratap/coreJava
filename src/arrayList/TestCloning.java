@@ -25,5 +25,11 @@ public class TestCloning {
 		// we want to make it true,
 		// then we need to override equals method in Employee class.
 		System.out.println(original.equals(cloned));
+		
+		System.out.println(original.hashCode());
+		System.out.println(cloned.hashCode());
+		
+		System.out.println(original.getClass().getSimpleName());
+		System.out.println(cloned.getClass().getSimpleName());
 	}
 }

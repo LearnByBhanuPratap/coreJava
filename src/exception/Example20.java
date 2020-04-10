@@ -11,7 +11,15 @@ public class Example20 {
 		try {
 			check();
 		} catch (ArithmeticException e) {
-			System.out.println("caught" + e);
+			System.out.println("caught======" + e);
+		}
+		
+		Example21 obj = new Example21();
+		try {
+			obj.tset2();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 

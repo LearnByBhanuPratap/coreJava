@@ -12,9 +12,9 @@ public class Example18 {
 
 	public static void main(String args[]) {
 		System.out.println("Welcome to the Admission process");
-		checkEligibiltyProcess(10, 39);
+		checkEligibiltyProcess(9, 25);
 		System.out.println("Have a good day");
 		
-		checkEligibiltyProcess(9, 25);
+		checkEligibiltyProcess(10, 39);
 	}
 }

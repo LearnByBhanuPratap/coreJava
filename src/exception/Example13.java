@@ -10,7 +10,7 @@ public class Example13 {
 				System.out.println("Inside block1");
 				int b = 40 / 0;
 				System.out.println(b);
-			} catch (ArithmeticException e) {
+			} catch (ArrayIndexOutOfBoundsException e) {
 				System.out.println("Exception in Child try block1");
 			}
 			// Child try block2

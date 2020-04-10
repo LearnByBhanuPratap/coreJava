@@ -14,7 +14,10 @@ public class Employee implements Cloneable {
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		return super.clone();
+		
+		Employee obj = (Employee)super.clone();
+		obj.setDepartment(obj.getDepartment());
+		return obj;
 	}
 
 	public int getEmpoyeeId() {
