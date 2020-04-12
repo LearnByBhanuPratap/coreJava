@@ -1,4 +1,4 @@
-package DeepCloningOfCollectionInJava;
+package CloningOfCollectionInJava;
 
 import java.util.ArrayList;
 
