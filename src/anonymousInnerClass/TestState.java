@@ -1,6 +1,8 @@
 package anonymousInnerClass;
 
 public class TestState {
+	
+	int i;
 
 	State biharState = new State() {
 
@@ -33,4 +35,12 @@ public class TestState {
 
 		}
 	};
+	
+	public static void main(String[] args) {
+		TestState testState =  new TestState();
+		State state = testState.biharState;
+		state.population();
+		
+		testState.upState.population();
+	}
 }

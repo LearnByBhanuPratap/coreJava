@@ -21,6 +21,7 @@ public class Employee1 implements Cloneable {
 		Department1 clonedDepartment = (Department1) cloned.getDepartment().clone();
 		
 		cloned.setDepartment(clonedDepartment);
+		
 		return cloned;
 	}
 

@@ -15,7 +15,7 @@ public class Example1 {
 		set.add("Test5");
 		Iterator<String> i = set.iterator();
 		while (i.hasNext()) {
-			System.out.println(i.next());
+			System.out.println(i.next().hashCode());
 		}
 	}
 }

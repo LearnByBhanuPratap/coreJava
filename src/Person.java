@@ -1,5 +1,5 @@
 
-public class Person {
+public class Person implements Cloneable{
 
 	String name;
 
@@ -13,5 +13,10 @@ public class Person {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 }

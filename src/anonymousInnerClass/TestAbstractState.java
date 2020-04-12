@@ -25,7 +25,9 @@ public class TestAbstractState {
 	public static void main(String[] args) {
 		TestAbstractState abstractState = new TestAbstractState();
 		abstractState.biharAbstractState.population();
+		abstractState.biharAbstractState.numberOfDistrict(90);
 		abstractState.upAbstractState.population();
+		abstractState.upAbstractState.numberOfDistrict(900);
 	}
 
 }

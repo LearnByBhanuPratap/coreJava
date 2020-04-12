@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ArrayListClone {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		
 		ArrayList<Integer> li = new ArrayList<Integer>();
 		
@@ -26,8 +26,11 @@ public class ArrayListClone {
 
 		ArrayList<Person> original = new ArrayList<Person>();
 		original.add(new Person("RAM"));
-
-		ArrayList<Person>  cloned = (ArrayList<Person>)original.clone();
+		
+		ArrayList<Person> cloned = new ArrayList<Person>();
+		for (int i = 0; i < original.size(); i++) {
+			cloned.add((Person)original.get(i).clone());
+		}
 
 		System.out.println("origin person object hashCode==" + original.hashCode());
 		System.out.println("cloned person object hashCode==" + cloned.hashCode());

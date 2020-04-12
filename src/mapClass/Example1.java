@@ -11,6 +11,7 @@ public class Example1 {
 		map.put("Test2", "B");
 		map.put("Test3", "C");
 		map.put("Test4", "D");
+		map.get("Test1");
 		System.out.println(map);
 
 		for (Map.Entry<String, String> m : map.entrySet()) {
