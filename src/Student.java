@@ -28,9 +28,18 @@ public class Student implements Comparable<Student> {
 		al.add(new Student(102, "Amit", 20));
 		al.add(new Student(109, "Sohan", 22));
 
+		System.out.println(al);
 		Collections.sort(al);
-		for (Student st : al) {
-			System.out.println(st.rollno + " " + st.name + " " + st.age);
-		}
+		System.out.println(al);
+		
+//		for (Student st : al) {
+//			System.out.println(st.rollno + " " + st.name + " " + st.age);
+//		}
 	}
+
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", name=" + name + ", age=" + age + "]";
+	}
+
 }

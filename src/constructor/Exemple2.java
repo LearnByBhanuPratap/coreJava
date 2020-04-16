@@ -8,7 +8,7 @@ public class Exemple2 {
 	}
 	
 	public static void main(String[] args) {
-		Exemple2 obj = new Exemple2();
+		//Exemple2 obj = new Exemple2();
 		
 		Exemple2 obj1 = new Exemple2(7);
 	}

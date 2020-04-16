@@ -14,10 +14,19 @@ public class Example17 {
 		list.add(15);
 		
 		System.out.println("before sorting="+list);
-		
 		Collections.sort(list);
 		
 		System.out.println("After sorting="+list);
+		
+		ArrayList<String> list1 = new ArrayList<>();
+		list1.add("CC");
+		list1.add("BB");
+		list1.add("AA");
+		System.out.println("before sorting="+list1);
+		Collections.sort(list1);
+		
+		System.out.println("After sorting="+list1);
+
 	}
 
 }
