@@ -6,13 +6,16 @@ public class HasCodeExampl1 {
 		return super.hashCode();
 	}
 
-	public static void main(String[] args) throws CloneNotSupportedException {
+	public static void main(String[] args) {
 
 		HasCodeExampl1 codeExampl1 = new HasCodeExampl1();
+		
 		String s1 = "test";
 		String s2 = "test";
 
 		HasCodeExampl1 codeExampl2 = codeExampl1;
+		
+		System.out.println(codeExampl2);
 
 		HasCodeExampl1 codeExampl3 = new HasCodeExampl1();
 

@@ -1,6 +1,7 @@
 package arrayList;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Example1 {
@@ -27,6 +28,12 @@ public class Example1 {
 		li1.add("test1");
 		li1.add("test2");
 		li1.add("test1");
+		
+		LinkedList<String> li3 = new LinkedList<String>();
+		li3.getFirst();
+		
+		List<String> li4 = new LinkedList<String>();
+		li4.getFirst();
 	}
 	
 	public static void main(String[] args) {
