@@ -22,6 +22,7 @@ public class PersonHashingTest3{
 		map.put(new PersonHashingTest3("pratap"), 20);
 		map.put(new PersonHashingTest3("bhanuTest"), 30);
 		map.put(new PersonHashingTest3("bhanuTest"), 40);
+		
 		Set<PersonHashingTest3> keys = map.keySet();
 		
 		for (PersonHashingTest3 key : keys) {

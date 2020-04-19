@@ -15,6 +15,11 @@ public class PersonHashingTest1{
 		//System.out.println("hashCode for key: " + data + " = " + hash);
 		return hash;
 	}
+	
+//	@Override
+//	public boolean equals(Object obj) {
+//		return super.equals(obj);
+//	}
 
 	@Override
 	public boolean equals(Object obj) {
