@@ -2,13 +2,7 @@ package setClass;
 
 import java.util.HashSet;
 
-/**
- * 
- * @author bsingh5
- * 
- *  This Example will give us shallow copy
- */
-public class CloneWith_Reference4{
+public class CloneWith_Reference4 {
 
 	private int i;
 
@@ -55,19 +49,19 @@ public class CloneWith_Reference4{
 	public static void main(String[] args) throws CloneNotSupportedException {
 
 		HashSet<CloneWith_Reference4> original = new HashSet<CloneWith_Reference4>();
-		
+
 		original.add(new CloneWith_Reference4(2, 3, new EmployeeTest("Test", 30)));
 
-		HashSet<CloneWith_Reference4> cloned = (HashSet<CloneWith_Reference4>)original.clone();
-		
+		HashSet<CloneWith_Reference4> cloned = (HashSet<CloneWith_Reference4>) original.clone();
+
 		System.out.println("Original Object==" + original);
 		System.out.println("Cloned Object==" + cloned);
-		
+
 		System.out.println("Original Object==" + original.hashCode());
 		System.out.println("Cloned Object==" + cloned.hashCode());
-		
+
 		System.out.println(original == cloned);
-		
+
 		System.out.println("------------------------");
 
 		// Modifying clone object
@@ -104,7 +98,7 @@ class EmployeeTest {
 		this.name = name;
 		this.age = age;
 	}
-	
+
 	public String getName() {
 		return name;
 	}

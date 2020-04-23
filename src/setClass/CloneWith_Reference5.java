@@ -3,12 +3,6 @@ package setClass;
 import java.util.HashSet;
 import java.util.Iterator;
 
-/**
- * 
- * @author bsingh5
- * 
- *         This Example will give us deep copy
- */
 public class CloneWith_Reference5 implements Cloneable {
 
 	private int i;
@@ -61,7 +55,7 @@ public class CloneWith_Reference5 implements Cloneable {
 	public static void main(String[] args) throws CloneNotSupportedException {
 
 		HashSet<CloneWith_Reference5> original = new HashSet<CloneWith_Reference5>();
-		
+
 		original.add(new CloneWith_Reference5(2, 3, new EmployeeTestLocal("Test", 30)));
 
 		HashSet<CloneWith_Reference5> cloned = new HashSet<CloneWith_Reference5>();
@@ -69,23 +63,22 @@ public class CloneWith_Reference5 implements Cloneable {
 		Iterator<CloneWith_Reference5> itr = original.iterator();
 
 		while (itr.hasNext()) {
-			
+
 			CloneWith_Reference5 next = (CloneWith_Reference5) itr.next().clone();
-			
+
 			EmployeeTestLocal emp = (EmployeeTestLocal) next.getEmployee().clone();
-			
+
 			next.setEmployee(emp);
-			
+
 			cloned.add(next);
 		}
 
 		System.out.println("Original Object==" + original);
 		System.out.println("Cloned Object==" + cloned);
-		
+
 		System.out.println("Original Object==" + original.hashCode());
 		System.out.println("Cloned Object==" + cloned.hashCode());
-		
-		
+
 		System.out.println("------------------------");
 
 		// Modifying clone object
@@ -114,7 +107,7 @@ public class CloneWith_Reference5 implements Cloneable {
 
 }
 
-class EmployeeTestLocal implements Cloneable{
+class EmployeeTestLocal implements Cloneable {
 	private int age;
 	private String name;
 
