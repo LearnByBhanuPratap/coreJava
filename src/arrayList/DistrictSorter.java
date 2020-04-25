@@ -8,7 +8,5 @@ public class DistrictSorter implements Comparator<State>{
 	public int compare(State o1, State o2) {
 		return o1.getDistrict().compareTo(o2.getDistrict());
 	}
-	
-	Comparable<T>
 
 }

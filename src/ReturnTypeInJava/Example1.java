@@ -1,4 +1,4 @@
-package returnTypeInJava;
+package ReturnTypeInJava;
 
 public class Example1 {
 	

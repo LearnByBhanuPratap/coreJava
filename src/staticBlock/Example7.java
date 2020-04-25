@@ -8,8 +8,8 @@ public class Example7 {
 	static void test1() {
 		i = 20;
 		System.out.println("from m1");
-		b = 10;
-		test2();
+		//b = 10;
+		//test2();
 	}
 
 	void test2() {

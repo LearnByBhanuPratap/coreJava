@@ -4,6 +4,6 @@ public interface A {
 
 }
 
-public class B implements A {
+class B implements A {
 
 }

@@ -33,7 +33,7 @@ public class Example1 {
 		li3.getFirst();
 		
 		List<String> li4 = new LinkedList<String>();
-		li4.getFirst();
+		//li4.getFirst();
 	}
 	
 	public static void main(String[] args) {

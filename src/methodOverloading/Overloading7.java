@@ -12,6 +12,6 @@ public class Overloading7 {
 
 	public static void main(String args[]) {
 		Overloading7 obj = new Overloading7();
-		obj.sum(20, 20);
+		//obj.sum(20, 20);
 	}
 }

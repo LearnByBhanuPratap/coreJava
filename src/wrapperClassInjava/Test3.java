@@ -5,7 +5,7 @@ class Test3 {
 		int val = 99;
 		int str1 = Integer.valueOf(val);
 		System.out.print(str1);
-		int str = Integer.parseInt(val);
-		System.out.print(str);
+		// int str = Integer.parseInt(val);
+		//System.out.print(str);
 	}
 }

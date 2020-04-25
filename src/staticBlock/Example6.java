@@ -6,7 +6,7 @@ public class Example6 {
 	static int k = 80;
 	static{
 		k = 100;
-		i = 60;
+		//i = 60;
 	}
 
 }
