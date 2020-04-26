@@ -7,7 +7,9 @@ import java.util.Set;
 public class Example6 {
 
 	public static void main(String[] args) {
+		
 		HashMap<String, String> map = new HashMap<>();
+		
 		map.put("Test1", "A");
 		map.put("Test2", "B");
 		map.put("Test3", "C");
@@ -16,7 +18,7 @@ public class Example6 {
 		/**
 		 * @return a set view of the mappings contained in this map.
 		 */
-		Set<Entry<String, String>> entry = map.entrySet();
+		Set< Entry<String, String> > entry = map.entrySet();
 
 		for (Entry<String, String> entry2 : entry) {
 			System.out.println(entry2.getKey() + "==" + entry2.getValue());
