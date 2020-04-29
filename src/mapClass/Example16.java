@@ -1,14 +1,13 @@
 package mapClass;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.TreeMap;
 
 public class Example16 {
 
 	public static void main(String[] args) {
 
-		HashMap<Integer, String> hasMap = new LinkedHashMap<Integer, String>();
+		HashMap<Integer, String> hasMap = new HashMap<Integer, String>();
 		
 		hasMap.put(null, null);
 		hasMap.put(null, null);
