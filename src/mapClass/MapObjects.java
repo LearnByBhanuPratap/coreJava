@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class MapObjects {
 
 	public static void main(String[] args) {
-
+		ConcurrentHashMap<String , String>  mymap = new ConcurrentHashMap<String ,String>();
+		
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		map.put(10, 20);
 		map.put(11, 30);
