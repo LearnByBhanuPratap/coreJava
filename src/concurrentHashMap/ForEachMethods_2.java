@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.BiFunction;
 
-public class ComputeMethods_2 {
+public class ForEachMethods_2 {
 
 	public static void main(String[] args) {
 
@@ -19,32 +19,34 @@ public class ComputeMethods_2 {
 		long start = System.currentTimeMillis();
 
 		conHashMap.forEach((k, v) -> System.out.print(v.isEmpty() ? " " : v.concat(" concat") + " "));
-		
-		System.out.println();
 
 		long end = System.currentTimeMillis();
 
 		System.out.println(end - start);
 
+		System.out.println("----------------------------");
+		
 		start = System.currentTimeMillis();
 
-		conHashMap.forEach(25, (k, v) -> v.concat("concat"));
+		conHashMap.forEach(25, (k, v) -> System.out.print(v.concat("concat"+",")));
 
 		end = System.currentTimeMillis();
 
 		System.out.println(end - start);
+		
+		System.out.println("----------------------------");
 
 		// System.out.println(conHashMap);
 
-		start = System.currentTimeMillis();
+		
 		conHashMap.forEach(4, (k, v) -> v, (v) -> System.out.print(v.toLowerCase() + ", "));
-		System.out.println();
+		System.out.println("----------------------------");
 
-		System.out.println(conHashMap);
+		//System.out.println(conHashMap);
 
 		// forEach() without transformer function
 		conHashMap.forEach(4, (k, v) -> System.out.print(String.valueOf(k) + " " + v.toLowerCase() + ", "));
-		System.out.println();
+		System.out.println("----------------------------");
 
 		// forEach() without transformer function
 		conHashMap.forEach(4, (k, v) -> hashmap.put(k, v.toUpperCase()));
@@ -54,13 +56,7 @@ public class ComputeMethods_2 {
 		// forEach() with transformer function
 		System.out.print("Values are ");
 		conHashMap.forEach(4, (k, v) -> v, (v) -> System.out.print(v + ", "));
-		System.out.println();
-		// System.out.println(conHashMap);
-
-		end = System.currentTimeMillis();
-
-		System.out.println(end - start);
+		System.out.println("----------------------------");
 
 	}
-
 }

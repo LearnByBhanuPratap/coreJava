@@ -28,7 +28,7 @@ public class ConcurrentMapVsMap_1 {
 		
 		service.awaitTermination(20, TimeUnit.SECONDS);
 		
-		//System.out.println(ob.hahsMap);
+		System.out.println(ob.hahsMap);
 	}
 
 	Runnable writeThreaOne = new Runnable() {
